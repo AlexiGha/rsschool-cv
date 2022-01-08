@@ -2,11 +2,135 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Aliaksey Halchenia CV</title>
 </head>
 <body>
+<div class="container">
+            <nav class="nav-list">
+              <a href="#contacts" class="nav-link">Contacts</a>
+              <a href="#myself" class="nav-link">About me</a>
+              <a href="#skills" class="nav-link">Skills</a>
+              <a href="#education" class="nav-link">Education</a>
+              <a href="#code-example" class="nav-link">Code-exemle</a>
+              <a href="#languages" class="nav-link">Languages</a>
+            </nav>
+
+    <header>
+        <div class="column-left">
+            <img class="avatar" src="imagines/ag2.jpg" alt="Avatar" width="215" height="264">
+        </div>
+        <div class="column-right">
+            <h1> ALIAKSEY HALCHENIA</h1>
+            <h3>Beginner Front-End Developer</h3>
+        </div>
+    </header>
+    <main>
+        <div class="column-left">
+            <section class="contacts" id="contacts">
+                <h2>Contacts:</h2>
+                <ul>
+                    <li>
+                        <img src="imagines/tel.png" alt="Tel" width="30" height="30">
+                        <p>+375 (33) 321-91-21</p>
+                    </li>
+                    <li>
+                        <img src="imagines/telegramm.jpg" alt="Telegram" width="30" height="30">
+                        <p>@Alexey</p>
+                    </li>
+                    <li>
+                        <img src="imagines/email.png" alt="E-mail" width="30" height="30">
+                        <p>novogrudocc@gmai.com</p>
+		    </li>
+                    
+                </ul>
+            </section>
+            <section class="skills" id="skills" >
+                <h2>Skills:</h2>
+                <ul>
+                    <li>HTML - Beginner</li>
+                    <li>CSS Flex - Beginner</li>
+                    <li>Markdown - Beginner</li>
+                    <li>JavaScript - Beginner</li>
+
+                </ul>
+            </section>
+
+            <section class="languages" id="languages" >
+                <h2>Languages:</h2>
+                <ul>
+                    <li>
+                        <p class="language-name">Belorussian</p>
+                        <p>Native</p>
+                    </li>
+                    <li>
+                        <p class="language-name">English</p>
+                        <p>A2</p>
+                    </li>
+                    <li>
+                        <p class="language-name">Polish</p>
+                        <p>Native</p>
+                    </li>
+                    <li>
+                        <p class="language-name">Russian</p>
+                        <p>Native</p>
+                    </li>
+                    
+                </ul>
+            </section>
+
+        </div>
+        <div class="column-right">
+           
+            <article class="myself" id="myself" >
+                <h2>About me:</h2>
+                
+                <p><strong>Location:</strong> Hrodna, Belarus</p>
+                <p>
+                    I work in a building materials store. I would like to change the sphere of my professional activity. I decided to take courses and become a programmer. I have some ideas for this area and I would like to implement them in the future.
+                </p>
+            </article>
+            <hr>
+            <section class="education" id="education" >
+                <h2>Education:</h2>
+                <p><strong>NGAK (Agricultural college)</strong></p>
+                <p>Economic department</p>
+            </section>
+            <hr>
+            <section class="courses">
+                <h2>Courses:</h2>
+                <ul>
+                    <li>RS school - JS Frontend (study)</li>
+                    
+                </ul>
+            </section>  
+            <hr>
+            <section class="code-example" id="code-example" >
+                <h2>Code example:</h2>
+              
+                <pre><code>
+                    const yearPerCentury = (year) =>{
     
+                        const century = Math.floor(year/100)+1;
+                        return century;
+                    };
+                </code></pre>
+                <p>My code translates the year number into the century number.</p>
+        </div>
+    </main>
+    <footer>
+        <a class="my-github" href="https://github.com/AlexiGha">
+            <img class="github-icon" src="imagines/git.png" alt="Github Icon" width="26" height="26">
+            <p>GitHub</p>
+        </a>
+        <p>© 2021</p>
+        <a href="https://rs.school/js/">
+            <img src="imagines/rsschool.png" alt="Rsschool Icon" width="73" height="26">
+    </footer>
+</div>
 </body>
 </html>
