@@ -1,5 +1,217 @@
+@font-face {
+  font-family: 'Merriweather';
+  src: url("assets/fonts/Merriweather-Bold.ttf");
+}
+@font-face {
+  font-family: 'Inter';
+  src: url("assets/fonts/Inter-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url("assets/fonts/Inter-Bold.ttf");
+  font-weight: 700;
+}
+:root {
+  --color-gold: #bdae82;
+  --color-black: #000;
+  --color-white: #fff;
+  --font1: 60px;
+  --font2: 40px;
+}
 .container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  color: white;
+  background-color: black;
+  margin: 0;
+}
+h1, h2 {
+  font-family: 'Merriweather', serif;
+}
+h1 {
+  font-size: 60px;
+  line-height: 120px;
+  margin: 0 0;
+}
+h2 {
+  font-size: 40px;
+  line-height: 80px;
+}
+.header-container {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: url('./assets/img/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+.icon {
+  fill:  var(--color-white);
+  cursor: pointer;
+}
+.icon:hover {
+  fill: var(--color-gold);
+}
+nav {
+  font-size: 20px;
+  line-height: 50px;
+  margin-left: auto;
+}
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+  transition: .3s;
+}
+.nav-link {
+  text-decoration: none;
+  transition: color 0.5s;
+  color: var(--color-white);
+}
+.nav-link:hover {
+  color: var(--color-gold);
+}
+.switch-lng {
+  font-size: 20px;
+  line-height: 50px;
+  font-weight: bold;
+}
+a.ru-en.active {
+  color: var(--color-gold);
+}
+.hero-container {
+  height: calc(910px - 90px);
+  background-image: url('./assets/img/bg.jpg');
+  background-position: center -90px;
+  background-repeat: no-repeat;
+}
+.heroBlock {
+  width: 460px;
+  height: 330px;
+  padding-left: 80px;
+  padding-top: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 20px;
+  line-height: 40px;
+}
+.gold-butt {
+  height: 55px;
+  width: 220px;
+  background-color: var(--color-gold);
+  cursor: pointer;
+  border: 0;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 40px;
+}
+.gold-butt:hover {
+  color:var(--color-white) ;
+}
+.section-title {
+  padding-top: 100px;
+  margin: 0 auto;
+  width: 50%;
+  background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
+  text-align:center;
+}
+.skills-title span {
+  padding: 0 20px;
+  background-color: var(--color-black);
+  color: var(--color-gold);
+}
+.skills-items {
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.skill-item {
+  height: 140px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  font-size: 18px;
+  line-height: 36px;
+  text-align:center;
+}
+.skill-item p {
+  padding: 0 20px;
+  margin: 0;
+}
+p.skill-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+.skill-item:nth-child(1) {
+  background-image: url('./assets/svg/camera1.svg');
+  background-size: 62px 50px;
+}
+.skill-item:nth-child(2) {
+  background-image: url('./assets/svg/video1.svg');
+  background-size: 62px 50px;
+}
+.skill-item:nth-child(3) {
+  background-image: url('./assets/svg/image1.svg');
+  background-size: 62px 50px;
+}
+.skill-item:nth-child(4) {
+  background-image: url('./assets/svg/mic1.svg');
+  background-size: 62px 50px;
+}
+.botton-container {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.photo-container {
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+.videoPlayer {
+  margin: 0 auto;
+    height: 705px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url('./assets/img/video-player.jpg');
+}
+}
+::placeholder {
+  font-family: inherit;
+  color: #bdae82;
+  font-size: 20px;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: #bdae82;
+  transition: background-color 0s ease-in-out 9000s;
+}
+.contacts .container {
+  background: url('./assets/img/contacts.jpg');
+  background-size: auto 700px;
+  background-position: center center;
+}
